@@ -10,8 +10,11 @@ function updateWifiStatus() {
     // (Using a placeholder since browsers block reading real SSIDs)
     if (navigator.onLine) {
         nameDisplay.textContent = "Connected"; // <-- Replace with your network name
+        console.log('Connected');
     } else {
         nameDisplay.textContent = "Disconnected";
+        console.log('Disconnected');
+
     }
 
     // 2. Adjust Icon Bars based on Speed
